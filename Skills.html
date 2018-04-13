@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sai Bhasker Raju</title>
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+ <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ 
+<script type="text/javascript">	
+
+$(document).ready(function() {
+  M.AutoInit();
+var obj = {
+    Index: 1,
+    Experience: 2,
+    Education: 3,
+    Skills: 4,
+    Personal: 5,
+    Achievements: 6
+};
+
+var path = window.location.pathname;
+var page = path.split("/").pop().split(".")[0].toString();
+var value=obj[page];
+if(value!=0 || value!=undefined || value!=null)
+{
+	var allItems=document.getElementById("slide-out");
+	var liItem=allItems.getElementsByTagName("li")[value];	
+	$(liItem).children().addClass('pink-text darken-4');
+	if(liItem.hasChildNodes)
+	{
+		$(liItem.children).children().addClass("pink-text darken-4");
+	}
+}
+
+});
+
+</script>
+
+</head>
+<body>
+	 <!-- Navbar goes here -->
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s2">
+        			 <ul id="slide-out" class="sidenav sidenav-fixed">
+					    <li><div class="user-view">
+					      <div class="background">
+					        <img src="images/wallpaper.jpg">
+					      </div>
+					      <a href="#user"><img class="circle" src="images/bhasker.jpg"></a>
+					      <span class="white-text name">Sai Bhasker Raju</span>
+					      <a href="#email"><span class="white-text email">saibhaskerraju@outlook.com</span></a>
+					    </div></li>
+					    <li><a class="waves-effect" href="Index.html"><i class="material-icons">home</i>Home</a></li>
+					    <li><a class="waves-effect" href="Experience.html"><i class="material-icons">memory</i>Experience</a></li>
+					    <li><a class="waves-effect" href="Education.html"><i class="material-icons">school</i>Education</a></li>
+					    <li><a class="waves-effect" href="#!"><i class="material-icons">build</i>Skills</a></li>
+					    <li><a class="waves-effect" href="#!"><i class="material-icons">local_activity</i>Certification</a></li>
+					    <li><a class="waves-effect" href="#!"><i class="material-icons">local_florist</i>Personal Work</a></li>
+					    <li><a class="waves-effect" href="#!"><i class="material-icons">insert_emoticon</i>Achievements</a></li>
+
+					  </ul>
+
+      </div> <!-- end of col s2 main div side nav-->
+
+      <div class="col s10">
+       					<ul id="dropdown1" class="dropdown-content">
+		  <li><a class="modal-trigger pink-text darken-4" href="#contactInfo">Details</a></li>
+		</ul>
+		       					 <nav class="pink darken-4">
+						    <div class="nav-wrapper">
+						    	<div class="container">
+						       <a href="#!" class="brand-logo"><i class="material-icons">polymer</i>Portfolio</a>
+						      <ul class="right hide-on-med-and-down">
+						        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">more_vert</i></a></li>
+						      </ul>
+						  </div>
+						    </div>
+						  </nav>
+						  <div class="container">
+						  	
+							 <div class="row">
+							    <div class="col s12">
+							      <div class="card pink darken-2">
+							        <div class="card-content white-text hoverable z-depth-2">
+							          <span class="card-title">.NET Developer</span>
+							          <p>
+							          		<div class="row">
+							          			<div class="col s6">
+							          				<div class="row">
+													      <div class="col s6">
+													        <div class="card-panel transparent customClass">
+													          <div class="row valign-wrapper">
+													            <div class="col s5">
+													              <img src="images/cs.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+													            </div>
+													            <div class="col s7">
+													              <span>
+													                C#.NET
+													              </span>
+													            </div>
+													          </div>
+													        </div>
+													      </div>
+
+							          					<div class="col s6">
+							          						
+							          						    <div class="card-panel transparent customClass">
+													          <div class="row valign-wrapper">
+													            <div class="col s5">
+													              <img src="images/ssis.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+													            </div>
+													            <div class="col s7">
+													              <span>
+													                MSBI - SSIS
+													              </span>
+													            </div>
+													          </div>
+													        </div>
+							          					</div>
+							          				</div>
+							          				<div class="row">
+							          					<div class="col s6">
+							          						
+							          						 <div class="card-panel transparent customClass">
+													          <div class="row valign-wrapper">
+													            <div class="col s5">
+													              <img src="images/po.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+													            </div>
+													            <div class="col s7">
+													              <span>
+													                Microsoft Powershell
+													              </span>
+													            </div>
+													          </div>
+													        </div>
+							          					</div>
+							          					<div class="col s6">
+							          						
+							          						 <div class="card-panel transparent customClass">
+													          <div class="row valign-wrapper">
+													            <div class="col s5">
+													              <img src="images/aspmvc.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+													            </div>
+													            <div class="col s7">
+													              <span>
+													                ASP.NET MVC
+													              </span>
+													            </div>
+													          </div>
+													        </div>
+							          					</div>
+							          				</div>
+							          				
+							          				
+							          			</div>
+							          			<div class="col s6">
+							          				Developing Applications or building products for customers to solve their business needs always motivates me. Started my career with .NET. Learned C# for the first time in 2013, just the basics though and spent time on it fulltime in 2016. slowly moved into ASP.NET webforms, Winforms, WPF. Apart from this imperative programming style, I also moved into scripting and thanks to Powershell.
+							          			</div>
+							          		
+							          		</div>
+							          </p>
+							        </div>
+							  
+							      </div>
+							    </div>
+							  </div> <!-- end of card -->
+
+
+							 <div class="row">
+							    <div class="col s12">
+							      <div class="card  purple darken-4">
+							        <div class="card-content white-text hoverable z-depth-2">
+							          <span class="card-title">Databases</span>
+							          <p>
+							          		<div class="row">
+							          			<div class="col s6">
+							          				Developing is one phase of overall cycle, but where do you store your work. Here comes the most crucial part. Developers spend almost more than 40% of their time designing databases/tables etc. I worked on most of the versions of SQL Server like 2008R2, 2012, 2016. I agree, I am not a professional in SQL Server and didnt deep dive as well but comfortable with what i need to know. Also, got a chance to work on Azure SQL Warehouse and Amazon Redshift.
+							          			</div>
+							          			<div class="col s6">
+							          				<div class="row">
+
+							          					<div class="col s6">
+							          						<!--<img src="images/azure.png" width="100px" height="100px">-->
+							          				
+													        <div class="card-panel transparent customClass">
+													          <div class="row valign-wrapper">
+													            <div class="col s5">
+													              <img src="images/azure.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+													            </div>
+													            <div class="col s7">
+													              <span>
+													                Microsoft Azure
+													              </span>
+													            </div>
+													          </div>
+													        </div>
+													      
+														</div>
+										
+														<div class="col s6">
+							          				
+													        <div class="card-panel transparent customClass">
+													          <div class="row valign-wrapper">
+													            <div class="col s5">
+													              <img src="images/Redshift.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+													            </div>
+													            <div class="col s7">
+													              <span>
+													                Amazon Redshift
+													              </span>
+													            </div>
+													          </div>
+													        </div>
+													      </div>
+													  </div>
+													<div class="row">
+														<div class="col s6"> 
+													        <div class="card-panel transparent customClass">
+													          <div class="row valign-wrapper">
+													            <div class="col s5">
+													              <img src="images/sqlServer.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+													            </div>
+													            <div class="col s7">
+													              <span>
+													                SQL Server 2012,2014
+													              </span>
+													            </div>
+													          </div>
+													        
+													      </div>
+														</div>
+													</div>
+							          				</div>
+							          			</div>
+							          		
+							          </p>
+							        </div>
+							  
+							      </div>
+							    </div>
+							  </div><!-- end of card -->
+
+
+							<div class="row">
+							    <div class="col s12">
+							      <div class="card yellow darken-3">
+							        <div class="card-content white-text hoverable z-depth-2">
+							          <span class="card-title">Blockchain Developer</span>
+							          <p>
+							          		<div class="row">
+							          			<div class="col s6">
+							          				<div class="row">
+							          					<div class="col s12">
+							          						<img src="images/block.gif">
+							          					</div>
+
+							          				</div>
+					
+							          				
+							          			</div>
+							          			<div class="col s6">
+							          				I was very good at trading cryptocurrencies and one fine day i felt, its high time to learn the technology on which it runs. Blockchain technology attracted me a lot and the power it has is amazing. At first it was way too complex but when i pushed myself, i was able to feel it. There is still a lot for me to explore in blockchain. Later, i did my certification on it.
+							          			</div>
+							          		
+							          		</div>
+							          </p>
+							        </div>
+							  
+							      </div>
+							    </div>
+							  </div> <!-- end of card --> 
+
+
+							  <div class="row">
+							    <div class="col s12">
+							      <div class="card  brown darken-1">
+							        <div class="card-content white-text hoverable z-depth-5">
+							          <span class="card-title">Web Design</span>
+							          <p>
+							          		<div class="row">
+							          			<div class="col s8">
+							          				Designing always has been my passion and I am not sure how much I love it. When Material Design was Introducted, probably i was the first one to enjoy it as much as anyone. The colors and their glow is what matters the most. I really enjoy using Material Frameworks like getMDL and MaterializeCSS.
+							          			</div>
+							          			<div class="col s4">
+							          				<img src="images/webD.png">
+							          			</div>
+							          		</div>
+							          </p>
+							        </div>
+							  
+							      </div>
+							    </div>
+							  </div>
+						  </div><!-- end of container -->
+      </div><!-- end of main body div -->
+ <!-- Modal Structure -->
+										  <div id="contactInfo" class="modal bottom-sheet pink-text center-align">
+										    <div class="modal-content">
+										      <h4>Personal Information</h4>
+										      <p>
+										      	<div class="row ">
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">email</i></h5>
+													    <p>saibhaskerraju@outlook.com / bhaskerraju94@gmail.com</p>
+														</div>
+										      		</div>
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">cake</i></h5>
+													    <p>26-April-1994</p>
+														</div>
+										      		</div>
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">call</i></h5>
+													    <p>+91-9618798938</p>
+														</div>
+										      		</div>
+										      	</div>
+
+										      </p>
+										    </div>
+										  </div>
+										  <!-- end of Modal-->
+    </div>
+</body>
+</html>

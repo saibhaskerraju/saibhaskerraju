@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sai Bhasker Raju</title>
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+ <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ 
+<script type="text/javascript">	
+
+$(document).ready(function() {
+  M.AutoInit();
+var obj = {
+    Index: 1,
+    Experience: 2,
+    Education: 3,
+    Skills: 4,
+    Certification: 5,
+    Personal:6,
+    Achievements: 7
+};
+
+
+var path = window.location.pathname;
+var page = path.split("/").pop().split(".")[0].toString();
+var value=obj[page];
+if(value!=0 || value!=undefined || value!=null)
+{
+	var allItems=document.getElementById("slide-out");
+	var liItem=allItems.getElementsByTagName("li")[value];	
+	$(liItem).children().addClass('pink-text darken-4');
+	if(liItem.hasChildNodes)
+	{
+		$(liItem.children).children().addClass("pink-text darken-4");
+	}
+}
+
+});
+
+</script>
+
+</head>
+<body>
+	 <!-- Navbar goes here -->
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s2">
+        			 <ul id="slide-out" class="sidenav sidenav-fixed">
+					    <li><div class="user-view">
+					      <div class="background">
+					        <img src="images/wallpaper.jpg">
+					      </div>
+					      <a href="#user"><img class="circle" src="images/bhasker.jpg"></a>
+					      <span class="white-text name">Sai Bhasker Raju</span>
+					      <a href="#email"><span class="white-text email">saibhaskerraju@outlook.com</span></a>
+					    </div></li>
+					    <li><a class="waves-effect" href="Index.html"><i class="material-icons">home</i>Home</a></li>
+					    <li><a class="waves-effect" href="Experience.html"><i class="material-icons">memory</i>Experience</a></li>
+					    <li><a class="waves-effect" href="Education.html"><i class="material-icons">school</i>Education</a></li>
+					    <li><a class="waves-effect" href="Skills.html"><i class="material-icons">build</i>Skills</a></li>
+					    <li><a class="waves-effect" href="Certification.html"><i class="material-icons">local_activity</i>Certification</a></li>
+					    <li><a class="waves-effect" href="Personal.html"><i class="material-icons">local_florist</i>Personal Work</a></li>
+					    <li><a class="waves-effect" href="Achievements.html"><i class="material-icons">insert_emoticon</i>Achievements</a></li>
+
+					  </ul>
+
+      </div> <!-- end of col s2 main div side nav-->
+
+      <div class="col s10">
+       					<ul id="dropdown1" class="dropdown-content">
+		  <li><a class="modal-trigger pink-text darken-4" href="#contactInfo">Details</a></li>
+		</ul>
+		       					 <nav class="pink darken-4">
+						    <div class="nav-wrapper">
+						    	<div class="container">
+						       <a href="#!" class="brand-logo"><i class="material-icons">polymer</i>Portfolio</a>
+						      <ul class="right hide-on-med-and-down">
+						        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">more_vert</i></a></li>
+						      </ul>
+						  </div>
+						    </div>
+						  </nav>
+						  <div class="container">
+						  	<div class="section">
+						    <h5>Awards</h5>
+						    <p><div class="row">
+							    <div class="col s6">
+							      <div class="card">
+							        <div class="card-image">
+							          <img src="images/indi.jpg">
+							      
+							        </div>
+							        <div class="card-content">
+							          <p>    <span class="pink-text darken-4">Individual Award: </span>I am a very simple card. I am good at containing small bits of information.
+							          I am convenient because I require little markup to use effectively.</p>
+							        </div>
+							      </div>
+							    </div>
+
+							     <div class="col s6">
+							      <div class="card">
+							        <div class="card-image">
+							          <img src="images/team.jpg">
+							          
+							        </div>
+							        <div class="card-content">
+							          <p><span class="pink-text darken-4">Team Award: </span>I am a very simple card. I am good at containing small bits of information.
+							          I am convenient because I require little markup to use effectively.</p>
+							        </div>
+							      </div>
+							    </div>
+							  </div>
+							   <!-- Modal Structure -->
+										  <div id="contactInfo" class="modal bottom-sheet pink-text center-align">
+										    <div class="modal-content">
+										      <h4>Personal Information</h4>
+										      <p>
+										      	<div class="row ">
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">email</i></h5>
+													    <p>saibhaskerraju@outlook.com / bhaskerraju94@gmail.com</p>
+														</div>
+										      		</div>
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">cake</i></h5>
+													    <p>26-April-1994</p>
+														</div>
+										      		</div>
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">call</i></h5>
+													    <p>+91-9618798938</p>
+														</div>
+										      		</div>
+										      	</div>
+
+										      </p>
+										    </div>
+										  </div>
+										  <!-- end of Modal-->
+</p>
+						  </div><!-- end of section 1-->
+						  <div class="divider"></div>
+						  <div class="section">
+						    <h5>Student Associations</h5>
+						    <p><div class="row">
+							    <div class="col s6">
+							      <div class="card small">
+                                            <div class="card-image ">
+                                              <img src="images/microsoft.png">
+                                        
+                                            </div>
+                                            <div class="card-content">
+                                              <p><spam class="pink-text darken-4">Microsoft Student Partner</spam><br> Trained students on various Microsoft Technologies like WinForms, Universal Windows Applications using Win10.</p>
+                                            </div>
+                                          </div>      
+                                    </div>
+							     <div class="col s6">
+							       <div class="card small">
+                                            <div class="card-image ">
+                                              <img src="images/mozilla.jpg">
+                                             
+                                            </div>
+                                            <div class="card-content">
+                                              <p><spam class="pink-text darken-4">Firefox Student Ambassador</spam><br>Trained Students on Web technologies like HTML5, CSS3, JS. Started a club in my college and developed few basic apps with help of students</p>
+                                            </div>
+                                          </div>
+							    </div>
+							  </div><!-- end of row-->
+							  <div class="row">
+							  	  <div class="col s6">
+							      <div class="card medium">
+                                            <div class="card-image ">
+                                              <img src="images/inter.png">
+                                        
+                                            </div>
+                                            <div class="card-content">
+                                              <p><spam class="pink-text darken-4">Internshala Student Partner</spam><br>My responsibilities as Student Partner were to create awareness among students about Internships , Explain them how and why Internships are Important in a students life and also to promote Internshala Brand in my college</p>
+                                            </div>
+                                          </div>      
+                                    </div>
+							  </div>
+</p>
+						  </div><!-- end of section 2-->
+
+
+
+
+						  </div><!-- end of container-->
+      </div><!-- end of main body div -->
+
+    </div>
+</body>
+</html>

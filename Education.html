@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sai Bhasker Raju</title>
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+ <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ 
+<script type="text/javascript">	
+
+$(document).ready(function() {
+  M.AutoInit();
+var obj = {
+    Index: 1,
+    Experience: 2,
+    Education: 3,
+    Skills: 4,
+    Personal: 5,
+    Achievements: 6
+};
+
+var path = window.location.pathname;
+var page = path.split("/").pop().split(".")[0].toString();
+var value=obj[page];
+if(value!=0 || value!=undefined || value!=null)
+{
+	var allItems=document.getElementById("slide-out");
+	var liItem=allItems.getElementsByTagName("li")[value];	
+	$(liItem).children().addClass('pink-text darken-4');
+	if(liItem.hasChildNodes)
+	{
+		$(liItem.children).children().addClass("pink-text darken-4");
+	}
+}
+
+});
+
+</script>
+
+</head>
+<body>
+	 <!-- Navbar goes here -->
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s2">
+        			 <ul id="slide-out" class="sidenav sidenav-fixed">
+					    <li><div class="user-view">
+					      <div class="background">
+					        <img src="images/wallpaper.jpg">
+					      </div>
+					      <a href="#user"><img class="circle" src="images/bhasker.jpg"></a>
+					      <span class="white-text name">Sai Bhasker Raju</span>
+					      <a href="#email"><span class="white-text email">saibhaskerraju@outlook.com</span></a>
+					    </div></li>
+					    <li><a class="waves-effect" href="Index.html"><i class="material-icons">home</i>Home</a></li>
+					    <li><a class="waves-effect" href="Experience.html"><i class="material-icons">memory</i>Experience</a></li>
+					    <li><a class="waves-effect" href="Education.html"><i class="material-icons">school</i>Education</a></li>
+					    <li><a class="waves-effect" href="#!"><i class="material-icons">build</i>Skills</a></li>
+					    <li><a class="waves-effect" href="#!"><i class="material-icons">local_activity</i>Certification</a></li>
+					    <li><a class="waves-effect" href="#!"><i class="material-icons">local_florist</i>Personal Work</a></li>
+					    <li><a class="waves-effect" href="#!"><i class="material-icons">insert_emoticon</i>Achievements</a></li>
+
+					  </ul>
+
+      </div> <!-- end of col s2 main div side nav-->
+
+      <div class="col s10">
+       					 <ul id="dropdown1" class="dropdown-content">
+		  <li><a class="modal-trigger pink-text darken-4" href="#contactInfo">Details</a></li>
+		</ul>
+		       					 <nav class="pink darken-4">
+						    <div class="nav-wrapper">
+						    	<div class="container">
+						       <a href="#!" class="brand-logo"><i class="material-icons">polymer</i>Portfolio</a>
+						      <ul class="right hide-on-med-and-down">
+						        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">more_vert</i></a></li>
+						      </ul>
+						  </div>
+						    </div>
+						  </nav>
+						  <div class="container">
+
+						  	<div class="row">
+						  	     		
+								      <div class="col s12 ">
+								        <div class="card-panel z-depth-1 light-blue darken-4 ">
+								          <div class="row valign-wrapper">
+								            <div class="col s2">
+								              <img src="images/mrec.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+								            </div>
+								            <div class="col s10">
+								              <span class="white-text">
+								                I have done my Bachelor's of Technology in Electronics and Communication Engineering(ECE) from Malla Reddy Engineering College-Autonomous (MREC-A). The most attractive thing about my college is it's greenary. Their are number of tress in our campus and we just loved to spend time in our campus. We had great fun in terms of Education and Extra Ciricular Activities in the initial years of Education. Later on, as we progressed deep into the concepts of Engineering, we spent most of the time in our studies. I always liked to work in a team developing something rather than just clearing exams for proper grades. I along with my friends started technology clubs in our campus wherein we used to inivite other students ,help them in training on technologies and also create applications to publosh to marketplace. I collaborated with two IT gaints like Microsoft and Firefox representing myself as Student Partner. Few Highlights of my time in campus.
+								                <table class="responsive-table centered">
+
+											        <tbody>
+											         <tr>
+											            <td><b>Duration</b></td>
+											            <td>2012-2016</td>
+											          </tr>
+											          <tr>
+											            <td><b>Student Activities</b></td>
+											            <td>Worked as Microsoft Student Partner , Firefox Trainer and Internshala Student Partner. Founder of Mozilla@MREC technical club at my college.</td>
+											          </tr>
+											         
+											          <tr>
+											            <td><b>CGPA/Percentage</b></td>
+											            <td>80.12</td>
+											            
+											          </tr>
+											        </tbody>
+      											</table>
+								              </span>
+								            </div>
+								          </div>
+								        </div>
+								      </div>
+
+								       <div class="col s12 ">
+								        <div class="card-panel z-depth-1 amber ">
+								          <div class="row valign-wrapper">
+								           
+								            <div class="col s10">
+								              <span class="white-text">
+								                I studied Maths Physics and Chemistry(MPC) from Narayana Group of Institutions from Hyderabad,India. Studying Chemistry was little fun when compared to other subjects. We had a good teacher for chemistry and he taught us really well. 
+								                <table class="responsive-table centered">
+
+											        <tbody>
+											         <tr>
+											            <td><b>Duration</b></td>
+											            <td>2010-2012</td>
+											          </tr>
+											         
+											          <tr>
+											            <td><b>CGPA/Percentage</b></td>
+											            <td>88.4</td>
+											            
+											          </tr>
+											        </tbody>
+      											</table>
+								              </span>
+								            </div>
+								             <div class="col s2">
+								              <img src="images/Narayana.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+								            </div>
+								          </div>
+								        </div>
+								      </div>
+
+
+								      <div class="col s12 ">
+								        <div class="card-panel z-depth-1 pink">
+								          <div class="row valign-wrapper">
+								            <div class="col s2">
+								              <img src="images/dav.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+								            </div>
+								            <div class="col s10">
+								              <span class="white-text">
+								              The best part or phase in everyone's life would be their schooling. I totally miss my school and would like to go back if at all i get a chance. The person I am today is all because of the efforts of my teachers at school who taught me to be calm , focussed and be positive at difficult times. I have no words to describe how i feel when i think about my school , its just beyond description. I am glad and proud to say that i played for the School Basketball team for 3 years. We won few tournaments and lost few as well but the most important thing I learned from sports is teamwork and thinking. You have to think a lot when it comes to strategy games/sports. This always pushes a person beyond his limits.
+								                <table class="responsive-table centered">
+
+											        <tbody>
+											         <tr>
+											            <td><b>Passout year</b></td>
+											            <td>2010</td>
+											          </tr>
+											          <tr>
+											            <td><b>CGPA/Percentage</b></td>
+											            <td>8.8</td>
+											            
+											          </tr>
+											        </tbody>
+      											</table>
+								              </span>
+								            </div>
+								          </div>
+								        </div>
+								      </div>
+						  	</div>
+						  </div><!-- end of container -->
+
+ <!-- Modal Structure -->
+										  <div id="contactInfo" class="modal bottom-sheet pink-text center-align">
+										    <div class="modal-content">
+										      <h4>Personal Information</h4>
+										      <p>
+										      	<div class="row ">
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">email</i></h5>
+													    <p>saibhaskerraju@outlook.com / bhaskerraju94@gmail.com</p>
+														</div>
+										      		</div>
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">cake</i></h5>
+													    <p>26-April-1994</p>
+														</div>
+										      		</div>
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">call</i></h5>
+													    <p>+91-9618798938</p>
+														</div>
+										      		</div>
+										      	</div>
+
+										      </p>
+										    </div>
+										  </div>
+										  <!-- end of Modal-->
+      </div><!-- end of main body div -->
+
+    </div>
+</body>
+</html>

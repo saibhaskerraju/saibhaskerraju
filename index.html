@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sai Bhasker Raju</title>
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+ <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ 
+<script type="text/javascript">	
+
+$(document).ready(function() {
+M.AutoInit();
+var obj = {
+    Index: 1,
+    Experience: 2,
+    Education: 3,
+    Skills: 4,
+    Certification: 5,
+    Personal:6,
+    Achievements: 7
+};
+
+var path = window.location.pathname;
+var page = path.split("/").pop().split(".")[0].toString();
+var value=obj[page];
+if(value!=0 || value!=undefined || value!=null)
+{
+	var allItems=document.getElementById("slide-out");
+	var liItem=allItems.getElementsByTagName("li")[value];	
+	$(liItem).children().addClass('pink-text darken-4');
+	if(liItem.hasChildNodes)
+	{
+		$(liItem.children).children().addClass("pink-text darken-4");
+	}
+}
+
+var sdt = new Date('2016-07-04');
+var difdt = new Date(new Date() - sdt);
+$("#expSec").html((difdt.toISOString().slice(0, 4) - 1970) + "." + (difdt.getMonth()+1) + " Years");
+
+
+});
+
+</script>
+
+</head>
+<body>
+	 <!-- Navbar goes here -->
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s2">
+        			 <ul id="slide-out" class="sidenav sidenav-fixed">
+					    <li><div class="user-view">
+					      <div class="background">
+					        <img src="images/wallpaper.jpg">
+					      </div>
+					      <a href="#user"><img class="circle" src="images/bhasker.jpg"></a>
+					      <span class="white-text name">Sai Bhasker Raju</span>
+					      <a href="#email"><span class="white-text email">saibhaskerraju@outlook.com</span></a>
+					    </div></li>
+					    <li><a class="waves-effect" href="Index.html"><i class="material-icons">home</i>Home</a></li>
+					    <li><a class="waves-effect" href="Experience.html"><i class="material-icons">memory</i>Experience</a></li>
+					    <li><a class="waves-effect" href="Education.html"><i class="material-icons">school</i>Education</a></li>
+					    <li><a class="waves-effect" href="Skills.html"><i class="material-icons">build</i>Skills</a></li>
+					    <li><a class="waves-effect" href="Certification.html"><i class="material-icons">local_activity</i>Certification</a></li>
+					    <li><a class="waves-effect" href="Personal.html"><i class="material-icons">local_florist</i>Personal Work</a></li>
+					    <li><a class="waves-effect" href="Achievements.html"><i class="material-icons">insert_emoticon</i>Achievements</a></li>
+
+					  </ul>
+
+      </div> <!-- end of col s2 main div side nav-->
+
+      <div class="col s10">
+      	<ul id="dropdown1" class="dropdown-content">
+		  <li><a class="modal-trigger pink-text darken-4" href="#contactInfo">Details</a></li>
+		</ul>
+		       					 <nav class="pink darken-4">
+						    <div class="nav-wrapper">
+						    	<div class="container">
+						       <a href="#!" class="brand-logo"><i class="material-icons">polymer</i>Portfolio</a>
+						      <ul class="right hide-on-med-and-down">
+						        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">more_vert</i></a></li>
+						      </ul>
+						  </div>
+						    </div>
+						  </nav>
+						  <div class="container">
+								    <div class="row">
+							    <div class="col s12">
+    								<h5>About Me</h5>
+							      <div class="card  light-blue darken-4 white-text">
+							        <div class="card-image ">
+							          <img src="images/my.jpg">
+							         <!-- <span class="card-title pink-text">About Me</span>-->
+							          <a class="btn-floating halfway-fab waves-effect waves-light pink modal-trigger" href="#contactInfo"><i class="material-icons">perm_identity</i></a>
+							        </div>
+							        <div class="card-content">
+							             <p>My style of working is to mainly deals with emotions rather than taking actions based on what you see. To make you understand in technical terms, its called as " Abstraction ". Understanding Emotions and Feelings helps you build a Peaceful and meaningful atmosphere to work . The same goes with learning , the more you understand a concept/technology- its purpose of existence, how powerful it is , what are its boundaries and so on. When coming to learning software Technologies , the above statements claim themselves very useful . Rather than you jump from one to another technology just because it created a buzz in the market , stick to one and make best use of it. I do agree one Technology doesn't solve every business problem but we as developers should understand and should we able to explain why are we using any Technology(s) for our Business.<br>
+								          	<br><div class="divider"></div>
+								          <div class="row center-align">
+								          	<div class="col s4">
+								          		<div class="section">
+											    <h5>Sai Bhasker Raju</h5>
+											    <p>Associate Software Engineer</p>
+											  </div>
+								          	</div>
+								          	<div class="col s4">
+								    
+								          		<div class="section">
+											    <h5 id="expSec"></h5>
+											    <p>Work Experience</p>
+												</div>
+								          	</div>
+								          	<div class="col s4">
+								         
+								          		<div class="section ">
+											    <h5>2+</h5>
+											    <p>Project Completed</p>
+												</div>
+								          	</div>
+								          </div>
+
+								           <!-- Modal Structure -->
+										  <div id="contactInfo" class="modal bottom-sheet pink-text center-align">
+										    <div class="modal-content">
+										      <h4>Personal Information</h4>
+										      <p>
+										      	<div class="row ">
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">email</i></h5>
+													    <p>saibhaskerraju@outlook.com / bhaskerraju94@gmail.com</p>
+														</div>
+										      		</div>
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">cake</i></h5>
+													    <p>26-April-1994</p>
+														</div>
+										      		</div>
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">call</i></h5>
+													    <p>+91-9618798938</p>
+														</div>
+										      		</div>
+										      	</div>
+
+										      </p>
+										    </div>
+										  </div>
+										  <!-- end of Modal-->
+								          </p>
+							        </div>
+							      </div>
+							    </div>
+							  </div><!-- end of section 1-->
+							  <div class="divider"></div>
+								  <div class="section">
+								    <h5>Hobbies and Interests</h5>
+								    <p> 
+								    	<div class="col s12">
+								        <div class="card-panel light-blue lighten-2 white-text">
+								          <div class="row valign-wrapper">
+								          	   <div class="col s10">
+								              <span class="white-text">
+								              Learning new technologies is most important thing in one's life. You have to learn and apply those concepts in real life. I share the content with me with others by writing blogs on LinkedIn.
+								              </span>
+								            </div>
+								            <div class="col s2">
+								                <a class="btn-floating btn-large waves-effect waves-light deep-orange"><i class="material-icons">assignment</i></a>
+								            </div>
+								         
+								          </div>
+								        </div>
+								      </div>
+
+								    	 <div class="col s12">
+								        <div class="card-panel cyan white-text">
+								          <div class="row valign-wrapper">
+								            <div class="col s2">
+								                <a class="btn-floating btn-large waves-effect waves-light pink darken-3"><i class="material-icons">restaurant</i></a>
+								            </div>
+								            <div class="col s10">
+								              <span class="white-text">
+								               I love to explore new food items and restaurants. I would to join people to explore different food items.
+								              </span>
+								            </div>
+								          </div>
+								        </div>
+								      </div>
+
+								    	<div class="col s12">
+								        <div class="card-panel orange white-text">
+								          <div class="row valign-wrapper">
+								          	   <div class="col s10">
+								              <span class="white-text">
+								               My first thing in the morning would be a nice long jog to make myself fit and active throughout the day.
+								              </span>
+								            </div>
+								            <div class="col s2">
+								                <a class="btn-floating btn-large waves-effect waves-light purple"><i class="material-icons">fitness_center</i></a>
+								            </div>
+								         
+								          </div>
+								        </div>
+								      </div>
+
+									
+
+								      <div class="col s12">
+								        <div class="card-panel teal">
+								          <div class="row valign-wrapper">
+								          	   <div class="col s2">
+								                <a class="btn-floating btn-large waves-effect waves-light indigo"><i class="material-icons">flight</i></a>
+								            </div>
+								              <div class="col s10">
+								              <span class="white-text">
+								               The most fun stuff which I like to and encourage people to do is Travel. Travelling helps you to discover yourself and understand various cultures. Apart from that, as a foodie, i like to taste all kinds of local food items.
+								              </span>
+								            </div>						          
+								          </div>
+								        </div>
+								      </div>								     
+  </p>
+								  </div><!-- end of section-->
+							
+						  </div><!-- end of container -->
+      </div><!-- end of main body div -->
+
+    </div>
+</body>
+</html>

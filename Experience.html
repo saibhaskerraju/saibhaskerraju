@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sai Bhasker Raju</title>
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+ <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.480/pdf.min.js"></script>
+ 
+<script type="text/javascript"> 
+
+$(document).ready(function() {
+  M.AutoInit();
+var obj = {
+    Index: 1,
+    Experience: 2,
+    Education: 3,
+    Skills: 4,
+    Personal: 5,
+    Achievements: 6
+};
+
+var path = window.location.pathname;
+var page = path.split("/").pop().split(".")[0].toString();
+var value=obj[page];
+if(value!=0 || value!=undefined || value!=null)
+{
+  var allItems=document.getElementById("slide-out");
+  var liItem=allItems.getElementsByTagName("li")[value];  
+  $(liItem).children().addClass('pink-text darken-4');
+  if(liItem.hasChildNodes)
+  {
+    $(liItem.children).children().addClass("pink-text darken-4");
+  }
+}
+
+
+
+$('.modal').modal();
+
+
+});
+
+</script>
+
+</head>
+<body>
+     <!-- Navbar goes here -->
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s2">
+                     <ul id="slide-out" class="sidenav sidenav-fixed">
+                        <li><div class="user-view">
+                          <div class="background">
+                            <img src="images/wallpaper.jpg">
+                          </div>
+                          <a href="#user"><img class="circle" src="images/bhasker.jpg"></a>
+                          <span class="white-text name">Sai Bhasker Raju</span>
+                          <a href="#email"><span class="white-text email">saibhaskerraju@outlook.com</span></a>
+                        </div></li>
+                        <li><a class="waves-effect" href="Index.html"><i class="material-icons">home</i>Home</a></li>
+                        <li><a class="waves-effect" href="Experience.html"><i class="material-icons">memory</i>Experience</a></li>
+                        <li><a class="waves-effect" href="#!"><i class="material-icons">school</i>Education</a></li>
+                        <li><a class="waves-effect" href="#!"><i class="material-icons">build</i>Skills</a></li>
+                        <li><a class="waves-effect" href="#!"><i class="material-icons">local_activity</i>Certification</a></li>
+                        <li><a class="waves-effect" href="#!"><i class="material-icons">local_florist</i>Personal Work</a></li>
+                        <li><a class="waves-effect" href="#!"><i class="material-icons">insert_emoticon</i>Achievements</a></li>
+
+                      </ul>
+
+      </div> <!-- end of col s2 main div side nav-->
+
+      <div class="col s10">
+                        <ul id="dropdown1" class="dropdown-content">
+      <li><a class="modal-trigger pink-text darken-4" href="#contactInfo">Details</a></li>
+    </ul>
+                     <nav class="pink darken-4">
+                <div class="nav-wrapper">
+                  <div class="container">
+                   <a href="#!" class="brand-logo"><i class="material-icons">polymer</i>Portfolio</a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">more_vert</i></a></li>
+                  </ul>
+              </div>
+                </div>
+              </nav>
+
+                      <div class="container">
+                                <div class="row">
+                                    <div class="col s5">   
+                                        <div class="valign-wrapper" style="height:300px">
+                                         
+                                          <h5 class="center-align pink-text darken-4">Feb 2017 - Present </h5>
+                                    
+                                        </div>
+                                                                                
+                                    </div>
+                                    <div class="col s7">
+                                        <div class="card small">
+                                            <div class="card-image ">
+                                              <img src="images/prolifics.jpg">
+                                              <span class="card-title"></span>
+                                            </div>
+                                            <div class="card-content">
+                                              <p><spam class="pink-text darken-4">Associate Software Enginner</spam><br>Experience in MSBI-SSIS, C#, PowerShell and SQL Server 2012 ,2014, Azure SQL Warehouse and Amazon Redshift</p>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            <div class="row">
+                                    <div class="col s7">  
+                                    <div class="card small">
+                                            <div class="card-image ">
+                                              <img src="images/prolifics.jpg">
+                                              <span class="card-title"></span>
+                                            </div>
+                                            <div class="card-content">
+                                              <p><spam class="pink-text darken-4">Trainee Software Enginner</spam><br> Experience in SDLC, Agile Life Cycle. Worked on ASP.NET Webforms, C#.NET , SQl Server 2008R2.</p>
+                                            </div>
+                                          </div>      
+                                    </div>
+                                        <div class="col s5">    
+                                        <div class="valign-wrapper" style="height:300px">
+                                         
+                                          <h5 class="center-align pink-text darken-4">July 2016 - Feb 2017 </h5>
+                                    
+                                        </div>    
+                                    </div>
+                            </div><!-- end of row-->
+                            <div class="row">
+                                    <div class="col s5">   
+                                        <div class="valign-wrapper" style="height:300px">
+                                         
+                                          <h5 class="center-align pink-text darken-4">March 2015 - April 2016 </h5>
+                                    
+                                        </div>
+                                                                                
+                                    </div>
+                                    <div class="col s7">
+                                        <div class="card medium">
+                                            <div class="card-image ">
+                                              <img src="images/mozilla.jpg">
+                                              <span class="card-title"></span>
+                                            </div>
+                                            <div class="card-content">
+                                              <p><spam class="pink-text darken-4">Firefox Student Ambassador</spam><br>Trained Students on Web technologies like HTML5, CSS3, JS. Started a club in my college and developed few basic apps with help of students</p>
+                                            </div>
+                                              <div class="card-action">
+                                              <a class="modal-trigger pink-text darken-4" href="#modal1">View Details</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div><!-- end of row-->
+                                    <div class="row">
+                                    <div class="col s7">  
+                                    <div class="card medium">
+                                            <div class="card-image ">
+                                              <img src="images/microsoft.png">
+                                              <span class="card-title"></span>
+                                            </div>
+                                            <div class="card-content">
+                                              <p><spam class="pink-text darken-4">Microsoft Student Partner</spam><br> Trained students on various Microsoft Technologies like WinForms, Universal Windows Applications using Win10.</p>
+                                            </div>
+                                               <div class="card-action">
+                                              <a class="modal-trigger pink-text darken-4" href="#modal2">View Details</a>
+                                            </div>
+                                          </div>      
+                                    </div>
+                                        <div class="col s5">    
+                                        <div class="valign-wrapper" style="height:300px">
+                                         
+                                          <h5 class="center-align pink-text darken-4">March 2015 - April 2016 </h5>
+                                    
+                                        </div>    
+                                    </div>
+                            </div><!-- end of row-->
+                        </div><!-- end of container-->
+
+ <!-- Modal Structure -->
+                      <div id="contactInfo" class="modal bottom-sheet pink-text center-align">
+                        <div class="modal-content">
+                          <h4>Personal Information</h4>
+                          <p>
+                            <div class="row ">
+                              <div class="col s4">
+                                <div class="section ">
+                              <h5><i class="material-icons">email</i></h5>
+                              <p>saibhaskerraju@outlook.com / bhaskerraju94@gmail.com</p>
+                            </div>
+                              </div>
+                              <div class="col s4">
+                                <div class="section ">
+                              <h5><i class="material-icons">cake</i></h5>
+                              <p>26-April-1994</p>
+                            </div>
+                              </div>
+                              <div class="col s4">
+                                <div class="section ">
+                              <h5><i class="material-icons">call</i></h5>
+                              <p>+91-9618798938</p>
+                            </div>
+                              </div>
+                            </div>
+
+                          </p>
+                        </div>
+                      </div>
+                      <!-- end of Modal-->
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <p>
+          <object data="files/Sai Bhasker Raju.C.pdf#view=Fit" type="application/pdf" width="100%" height="850">
+              <p>
+                  It appears your Web browser is not configured to display PDF files. No worries, just <a href="/files/Sai Bhasker Raju.C.pdf">click here to download the PDF file.</a>
+              </p>
+          </object>
+      </p>
+    </div>
+  </div>
+    <div id="modal2" class="modal">
+    <div class="modal-content">
+      <p>
+          <object data="files/MSP.pdf#view=Fit" type="application/pdf" width="100%" height="850">
+              <p>
+                  It appears your Web browser is not configured to display PDF files. No worries, just <a href="/files/Sai Bhasker Raju.C.pdf">click here to download the PDF file.</a>
+              </p>
+          </object>
+      </p>
+    </div>
+  </div>
+
+       
+
+      </div><!-- end of main body div -->
+
+    </div>
+</body>
+</html>

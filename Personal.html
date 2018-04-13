@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sai Bhasker Raju</title>
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+ <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ 
+<script type="text/javascript">	
+
+$(document).ready(function() {
+  M.AutoInit();
+var obj = {
+    Index: 1,
+    Experience: 2,
+    Education: 3,
+    Skills: 4,
+    Certification: 5,
+    Personal:6,
+    Achievements: 7
+};
+
+var path = window.location.pathname;
+var page = path.split("/").pop().split(".")[0].toString();
+var value=obj[page];
+if(value!=0 || value!=undefined || value!=null)
+{
+	var allItems=document.getElementById("slide-out");
+	var liItem=allItems.getElementsByTagName("li")[value];	
+	$(liItem).children().addClass('pink-text darken-4');
+	if(liItem.hasChildNodes)
+	{
+		$(liItem.children).children().addClass("pink-text darken-4");
+	}
+}
+
+});
+
+</script>
+
+</head>
+<body>
+	 <!-- Navbar goes here -->
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s2">
+        			 <ul id="slide-out" class="sidenav sidenav-fixed">
+					    <li><div class="user-view">
+					      <div class="background">
+					        <img src="images/wallpaper.jpg">
+					      </div>
+					      <a href="#user"><img class="circle" src="images/bhasker.jpg"></a>
+					      <span class="white-text name">Sai Bhasker Raju</span>
+					      <a href="#email"><span class="white-text email">saibhaskerraju@outlook.com</span></a>
+					    </div></li>
+					    <li><a class="waves-effect" href="Index.html"><i class="material-icons">home</i>Home</a></li>
+					    <li><a class="waves-effect" href="Experience.html"><i class="material-icons">memory</i>Experience</a></li>
+					    <li><a class="waves-effect" href="Education.html"><i class="material-icons">school</i>Education</a></li>
+					    <li><a class="waves-effect" href="Skills.html"><i class="material-icons">build</i>Skills</a></li>
+					    <li><a class="waves-effect" href="Certification.html"><i class="material-icons">local_activity</i>Certification</a></li>
+					    <li><a class="waves-effect" href="Personal.html"><i class="material-icons">local_florist</i>Personal Work</a></li>
+					    <li><a class="waves-effect" href="Achievements.html"><i class="material-icons">insert_emoticon</i>Achievements</a></li>
+
+					  </ul>
+
+      </div> <!-- end of col s2 main div side nav-->
+
+      <div class="col s10">
+       			<ul id="dropdown1" class="dropdown-content">
+		  <li><a class="modal-trigger pink-text darken-4" href="#contactInfo">Details</a></li>
+		</ul>
+		       					 <nav class="pink darken-4">
+						    <div class="nav-wrapper">
+						    	<div class="container">
+						       <a href="#!" class="brand-logo"><i class="material-icons">polymer</i>Portfolio</a>
+						      <ul class="right hide-on-med-and-down">
+						        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons">more_vert</i></a></li>
+						      </ul>
+						  </div>
+						    </div>
+						  </nav>
+						  <div class="container">
+
+						  		<div class="section">
+								    <h3>Proof of Concept(POC)</h3>
+								 	 <p><div class="row">
+							    <div class="col s6">
+								      <div class="card">
+								        <div class="card-image">
+								          <img src="images/bot.png">
+								          <!--<span class="card-title pink-text">Chat Bot</span>-->
+								        </div>
+								        <div class="card-content">
+								          <p>Built a Chat Bot using Microsoft Bot Framework along with Microsoft Cognitive Services like Language Understanding Intelligent Service(LUIS) which is capable of understanding message style language and responds us back with what we asked. This is created for limited functionality for initial testing. This bot is integrated with Facebook for better reach.</p>
+								        </div>
+								        <div class="card-action">
+								          <a href="https://www.facebook.com/Prolificschatbot-Test-134475530419215/" class="pink-text darken-4">Visit Bot</a>
+								        </div>
+								      </div>
+								    </div>
+
+															     <div class="col s6">
+								      <div class="card">
+								        <div class="card-image">
+								          <img src="images/eth.png">
+								          <!--<span class="card-title">Voting Application</span>-->
+								        </div>
+								        <div class="card-content">
+								          <p><spam class="pink-text darken-4">E-Voter: </spam>Created a basic Voting application using Ethereum Framework wherein users cast their vote to the candidate they like. Built using solidity language with the help of Ganache Blockchain.UI is entirely built using MaterialieCSS Framework. Also, we have used InterPlanetary File System(IPFS) to store and retrieve files from the network and avoiding centralized storage to the maximum.</p>
+								        </div>
+								        <div class="card-action">
+								          <a href="#" class="pink-text darken-4">Visit site</a>
+								        </div>
+								      </div>
+								    </div>
+								</div></p>  
+								 </div><!-- end of section 1-->
+								 <div class="divider"></div>
+  <div class="section">
+    <h3>Publications</h3>
+    <p><div class="col s12">
+    <h4 class="header">Introduction to Blockchain</h4>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="images/w.jpg">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>This book is designed to help technical and non-technical people understand the essentials of blockchain and its story. This book starts by taking you to the past to explain you how it started in the early days and how things are currently in production. later on we will help you in understanding the problems in the current system and how blockchain can help you in solving them. In the end, we will help you in creating an Ultra small blockchain for better understanding of the workflow</p>
+        </div>
+        <div class="card-action">
+          <a href="https://payhip.com/b/Iqib" class="pink-text darken-4">Buy Book</a>
+        </div>
+      </div>
+    </div>
+  </div></p>
+  </div>
+
+
+ <!-- Modal Structure -->
+										  <div id="contactInfo" class="modal bottom-sheet pink-text center-align">
+										    <div class="modal-content">
+										      <h4>Personal Information</h4>
+										      <p>
+										      	<div class="row ">
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">email</i></h5>
+													    <p>saibhaskerraju@outlook.com / bhaskerraju94@gmail.com</p>
+														</div>
+										      		</div>
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">cake</i></h5>
+													    <p>26-April-1994</p>
+														</div>
+										      		</div>
+										      		<div class="col s4">
+										      			<div class="section ">
+													    <h5><i class="material-icons">call</i></h5>
+													    <p>+91-9618798938</p>
+														</div>
+										      		</div>
+										      	</div>
+
+										      </p>
+										    </div>
+										  </div>
+										  <!-- end of Modal-->
+
+
+
+						  </div><!-- end of container -->	
+      </div><!-- end of main body div -->
+
+    </div>
+</body>
+</html>
