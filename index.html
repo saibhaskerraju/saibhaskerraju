@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Sai Bhasker Raju</title>
+	<title>Sai Bhasker Raju Portfolio</title>
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Compiled and minified CSS -->
@@ -18,7 +18,6 @@
 	<link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection" />
 
 	<script type="text/javascript">	
-
 		$(document).ready(function () {
 			M.AutoInit();
 		//	$('.scrollspy').scrollSpy({ scrollOffset: -100, throttle: -200 ,getActiveElement: function(id) {
@@ -28,23 +27,18 @@
 			var sdt = new Date('2016-07-04');
 			var difdt = new Date(new Date() - sdt);
 			$("#expSec").html((difdt.toISOString().slice(0, 4) - 1970) + "." + (difdt.getMonth()) + " Years");
-
-
 			// ul click logic
 			  function getEventTarget(e) {
         e = e || window.event;
         return e.target || e.srcElement; 
     }
-
     var ul = document.getElementById('slide-out');
     ul.onclick = function(event) {
         var target = getEventTarget(event);
         removeClass(ul);
         appendClass(target);
     };
-
 		});// end of document ready
-
 		function removeClass(target)
 		{
 			$(target).find('li').each(function() {
@@ -54,7 +48,6 @@
 				{
 					//console.log(this);
 					$(this).find('i').each(function() {
-
 			  			$( this ).removeClass( "pink-text" );
 			});
 				$(this).children().removeClass("pink-text");
@@ -68,13 +61,11 @@
 			if(target.children.length=2)
 			{
 						$(target).each(function() {
-
 			  			$( this ).addClass( "pink-text" );
 			});
 				$(target).children().addClass("pink-text");
 			}
 		}
-
 	</script>
 
 </head>
@@ -123,7 +114,7 @@
 				</li>
 				<li>
 					<a class="waves-effect" href="#personal">
-						<i class="material-icons">local_florist</i>POC</a>
+						<i class="material-icons">local_florist</i>POC | Publications</a>
 				</li>
 				<li>
 					<a class="waves-effect" href="#achievements">
@@ -171,14 +162,7 @@
 									</a>
 								</div>
 								<div class="card-content">
-									<p>My style of working is to mainly deals with emotions rather than taking actions based on what you see. To make you
-										understand in technical terms, its called as " Abstraction ". Understanding Emotions and Feelings helps you build
-										a Peaceful and meaningful atmosphere to work . The same goes with learning , the more you understand a concept/technology-
-										its purpose of existence, how powerful it is , what are its boundaries and so on. When coming to learning software
-										Technologies , the above statements claim themselves very useful . Rather than you jump from one to another technology
-										just because it created a buzz in the market , stick to one and make best use of it. I do agree one Technology
-										doesn't solve every business problem but we as developers should understand and should we able to explain why are
-										we using any Technology(s) for our Business.
+									<p>I am a Technology Evangelist. I like reading about technology and its how I spend most of my time.I wrote my first line of code when i was 13 years old.Programming became very close to me as time passed on. I have <spam id="abtExp"></spam> years of IT experience and I am basically a .NET developer.Proven experience in SSIS Development, database schema preparation, and exposure to all stages of the software development life cycle. Experience in MSBI-SSIS, C#, PowerShell and SQL Server 2012 ,2014, Azure SQL Warehouse and Amazon Redshift. Apart from my professional work, i like travelling, meeting new people and i am a foodie.
 										<br>
 										<br>
 									<div class="divider pink"></div>
@@ -200,7 +184,7 @@
 
 												<div class="section ">
 													<h5>2+</h5>
-													<p>Project Completed</p>
+													<p>Projects</p>
 												</div>
 											</div>
 										</div>
@@ -220,8 +204,8 @@
 									<div class="row valign-wrapper">
 										<div class="col s10">
 											<span class="white-text">
-												Learning new technologies is most important thing in one's life. You have to learn and apply those concepts in real life.
-												I share the content with me with others by writing blogs on LinkedIn.
+												Learning new technologies is most important thing in one's life. You have to learn and implement them whereever needed.
+												I like to share my knowledge with others by writing blogs on LinkedIn.
 											</span>
 										</div>
 										<div class="col s2">
@@ -244,7 +228,7 @@
 										</div>
 										<div class="col s10">
 											<span class="white-text">
-												I love to explore new food items and restaurants. I would to join people to explore different food items.
+												I am a foodie and I love to explore different food cuisines and restaurants. Chinese style is what i prefer the most followed by Italian. I would love to join people to explore different food items.
 											</span>
 										</div>
 									</div>
@@ -470,7 +454,7 @@
 																		<td>
 																			<b>CGPA/Percentage</b>
 																		</td>
-																		<td>80.12</td>
+																		<td>81.02</td>
 
 																	</tr>
 																</tbody>
@@ -583,7 +567,7 @@
 										<div class="col s12">
 											<div class="card pink darken-2">
 												<div class="card-content white-text hoverable z-depth-2">
-													<span class="card-title">.NET Developer</span>
+													<span class="card-title">Microsoft Stack</span>
 													<p>
 														<div class="row">
 															<div class="col s6">
@@ -659,10 +643,10 @@
 
 															</div>
 															<div class="col s6">
-																Developing Applications or building products for customers to solve their business needs always motivates me. Started my
-																career with .NET. Learned C# for the first time in 2013, just the basics though and spent time on it fulltime
+																Developing applications or building products for customers to solve their business needs motivates me a lot. Started my
+																career with .NET Technology. I started by learning C# for the first time in 2013, just the basics though and spent time on it fulltime
 																in 2016. slowly moved into ASP.NET webforms, Winforms, WPF. Apart from this imperative programming style,
-																I also moved into scripting and thanks to Powershell.
+																I also moved into scripting languages by learning powershell.
 															</div>
 
 														</div>
@@ -685,8 +669,7 @@
 															<div class="col s6">
 																Developing is one phase of overall cycle, but where do you store your work. Here comes the most crucial part. Developers
 																spend almost more than 40% of their time designing databases/tables etc. I worked on most of the versions
-																of SQL Server like 2008R2, 2012, 2016. I agree, I am not a professional in SQL Server and didnt deep dive
-																as well but comfortable with what i need to know. Also, got a chance to work on Azure SQL Warehouse and Amazon
+																of SQL Server like 2008R2, 2012, 2014. I have a reasonable amount of experience as database designer and a developer. Apart from SQL Server, I also worked on Azure SQL Warehouse and Amazon
 																Redshift.
 															</div>
 															<div class="col s6">
@@ -762,7 +745,7 @@
 										<div class="col s12">
 											<div class="card yellow darken-3">
 												<div class="card-content white-text hoverable z-depth-2">
-													<span class="card-title">Blockchain Developer</span>
+													<span class="card-title">Blockchain Technology</span>
 													<p>
 														<div class="row">
 															<div class="col s6">
@@ -776,10 +759,9 @@
 
 															</div>
 															<div class="col s6">
-																I was very good at trading cryptocurrencies and one fine day i felt, its high time to learn the technology on which it runs.
+																It all started at the time of trading cryptocurrencies and I was very good at trading. I wanted to go beyond trading by understanding how cryptocurrencies are born and how they are being implemented.
 																Blockchain technology attracted me a lot and the power it has is amazing. At first it was way too complex
-																but when i pushed myself, i was able to feel it. There is still a lot for me to explore in blockchain. Later,
-																i did my certification on it.
+																but when i pushed myself, i understood its importance and business demand. I got certified later on as part of learning.
 															</div>
 
 														</div>
@@ -846,7 +828,7 @@
 													carried away with the concept of Decentralization, Immutability and its various other properties.</p>
 											</div>
 											<div class="card-action">
-												<a href="https://www.credential.net/mumafz4k" class="pink-text darken-4">View Certificate</a>
+												<a href="https://www.credential.net/mumafz4k" class="pink-text darken-4" target="_blank">View Certificate</a>
 											</div>
 										</div>
 									</div>
@@ -881,7 +863,7 @@
 														for better reach.</p>
 												</div>
 												<div class="card-action">
-													<a href="https://www.facebook.com/Prolificschatbot-Test-134475530419215/" class="pink-text darken-4">Visit Bot</a>
+													<a href="https://www.facebook.com/Prolificschatbot-Test-134475530419215/" class="pink-text darken-4" target="_blank">Visit Bot</a>
 												</div>
 											</div>
 										</div>
@@ -900,7 +882,7 @@
 														from the network and avoiding centralized storage to the maximum.</p>
 												</div>
 												<div class="card-action">
-													<a href="#" class="pink-text darken-4">Visit site</a>
+													<a href="#" class="pink-text darken-4" target="_blank">Visit site</a>
 												</div>
 											</div>
 										</div>
@@ -927,7 +909,7 @@
 														blockchain for better understanding of the workflow</p>
 												</div>
 												<div class="card-action">
-													<a href="https://payhip.com/b/Iqib" class="pink-text darken-4">Buy Book</a>
+													<a href="https://payhip.com/b/Iqib" class="pink-text darken-4" target="_blank">Buy Book</a>
 												</div>
 											</div>
 										</div>
@@ -937,6 +919,7 @@
 						</p>
 					</div>
 			</div>
+		</div>
 			<!-- end of personal div -->
 
 
@@ -963,8 +946,7 @@
 														</div>
 														<div class="card-content">
 															<p>
-																<span class="pink-text darken-4">Individual Award: </span>I am a very simple card. I am good at containing small bits of information. I am
-																convenient because I require little markup to use effectively.</p>
+																<span class="pink-text darken-4">Individual Award: </span>My efforts were recognized for my consistent performance in my project and was awarded with RACE Award.</p>
 														</div>
 													</div>
 												</div>
@@ -977,8 +959,7 @@
 														</div>
 														<div class="card-content">
 															<p>
-																<span class="pink-text darken-4">Team Award: </span>I am a very simple card. I am good at containing small bits of information. I am convenient
-																because I require little markup to use effectively.</p>
+																<span class="pink-text darken-4">Team Award: </span>Its very important to display your own efforts but at the same time, its important to take the team forward along with you. My continous balance with teammates in delivering release on time gave me this award.</p>
 														</div>
 													</div>
 												</div>
