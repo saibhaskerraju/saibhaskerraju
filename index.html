@@ -22,6 +22,10 @@
 			M.AutoInit();
 		//	$('.scrollspy').scrollSpy({ scrollOffset: -100, throttle: -200 ,getActiveElement: function(id) {
    // debugger; $(id).addClass("pink-text"); console.log(id);
+   $("#resumeBtn").click(function(e) {
+    e.preventDefault();  //stop the browser from following
+    window.location.href = 'files/Sai_Bhasker_Raju_Resume.pdf';
+});
    		$('.scrollspy').scrollSpy({ scrollOffset: -100, throttle: -200 });
 		
 			var sdt = new Date('2016-07-04');
@@ -119,6 +123,10 @@
 				<li>
 					<a class="waves-effect" href="#achievements">
 						<i class="material-icons">insert_emoticon</i>Achievements</a>
+				</li>
+				<li>
+					<a class="waves-effect" href="#resume">
+						<i class="material-icons">chrome_reader_mode</i>Resume</a>
 				</li>
 
 			</ul>
@@ -1052,6 +1060,23 @@
 				</div>
 			</div>
 			<!-- end of achievements div -->
+			<div id="resume" class="section scrollspy center-align"><!-- start of resume-->
+				<div class="row">
+					<div class="col s12">
+						<div class="container">
+							<div class="divider pink"></div>
+							<div class="section">
+								<h4 class="pink-text">Resume</h4>
+								<p>
+						<a class="btn-floating btn-large waves-effect waves-light red btn tooltipped" data-position="bottom" data-tooltip="Download" id="resumeBtn"><i class="material-icons left">cloud_download</i>Download Resume</a>
+					</p>
+				</div>
+						</div>
+						
+					</div>
+				</div>
+			</div><!-- end of resume-->
+
 		</div>
 		<!-- end of main body div s10-->
 		<!-- Modal Structure -->
