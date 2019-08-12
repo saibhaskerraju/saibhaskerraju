@@ -30,7 +30,7 @@
 		
 			var sdt = new Date('2016-07-04');
 			var difdt = new Date(new Date() - sdt);
-			$("#expSec").html((difdt.toISOString().slice(0, 4) - 1970) + "." + (difdt.getMonth()) + " Years");
+			//$("#expSec").html((difdt.toISOString().slice(0, 4) - 1970) + "." + (difdt.getMonth()) + " Years");
 			// ul click logic
 			  function getEventTarget(e) {
         e = e || window.event;
@@ -184,7 +184,7 @@
 											<div class="col s4">
 
 												<div class="section">
-													<h5 id="expSec"></h5>
+													<h5 id="expSec">3 Years</h5>
 													<p>Work Experience</p>
 												</div>
 											</div>
