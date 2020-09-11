@@ -28,9 +28,13 @@
 });
    		$('.scrollspy').scrollSpy({ scrollOffset: -100, throttle: -200 });
 		
-			var sdt = new Date('2016-07-04');
-			var difdt = new Date(new Date() - sdt);
-			//$("#expSec").html((difdt.toISOString().slice(0, 4) - 1970) + "." + (difdt.getMonth()) + " Years");
+		   var start=new Date("2016-07-04")
+			var firstEnd=new Date("2019-08-01")
+			var difference = (firstEnd.getFullYear()*12 + firstEnd.getMonth()) - (start.getFullYear()*12 + start.getMonth());
+			var newStart=new Date("2020-05-01")
+			var curDate=new Date();
+			var newDiff=(curDate.getFullYear()*12 + curDate.getMonth()) - (newStart.getFullYear()*12 + newStart.getMonth());
+			$("#expSec").html(((difference+newDiff)/12).toFixed(1) + " Years");
 			// ul click logic
 			  function getEventTarget(e) {
         e = e || window.event;
@@ -191,7 +195,7 @@
 											<div class="col s4">
 
 												<div class="section ">
-													<h5>2+</h5>
+													<h5>4+</h5>
 													<p>Projects</p>
 												</div>
 											</div>
